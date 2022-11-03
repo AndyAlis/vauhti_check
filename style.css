@@ -20,6 +20,7 @@ body {
 
 .body_container {
     display: flex;
+    align-items: center;
     flex-direction: column;
     height: 100%;
 }
@@ -43,11 +44,26 @@ body {
 .content {
     flex: 1 0 auto;
     text-align: center;
-    padding: 0 16px;
+    padding: 0 32px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__header {
+    flex: 0 0 auto;
+}
+.conten__checkdiv {
+    flex: 1 0 auto;
+    border: 1px solid white;
+}
+.conten__footer {
+    flex: 0 0 auto;
 }
 
 .content h1 {
     margin-bottom: 2rem;
+    letter-spacing: 2px;
 }
 .footer {
     flex: 0 0 auto;
