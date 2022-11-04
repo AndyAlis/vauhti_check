@@ -52,10 +52,13 @@ body {
 
 .content__header {
     flex: 0 0 auto;
+    margin-bottom: 2rem;
 }
 .conten__checkdiv {
     flex: 1 0 auto;
     border: 1px solid white;
+    min-height: 400px;
+    margin-bottom: 2rem;
 }
 .conten__footer {
     flex: 0 0 auto;
