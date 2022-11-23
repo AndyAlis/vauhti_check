@@ -21,20 +21,42 @@
         <div class="content">
             <div class="content__header">
                 <h1>Проверка подлинности товара Vauhti</h1>
-                <p>Вы можете проверить подлинность товара введя код с защитной наклейки ниже. Проверка подлинности доступна для порошков Vauhti: ... </p>
+                <p>Вы можете проверить подлинность товара введя код с защитной наклейки ниже. Проверка подлинности доступна для порошков Vauhti:</p>
+                <br>
+                <div class="powders_images">
+                    <img src="./img/S320_FCSPC.png" alt="powder COLD">
+                    <img src="./img/S320_FCSPM.png" alt="powder MED">
+                    <img src="./img/S320_FCSPW.png" alt="powder WET">
+                    <img src="./img/S320_FCSPLDR.png" alt="powder LDR">
+                </div>
+                <p>FC SPEED WET / MID / COLD / LDR</p>
+                <div class="powders_images">
+                    <img src="./img/FP007_ZEROFOX.png" alt="powder ZEROFOX">
+                    <img src="./img/FP008_GOLDFOX.png" alt="powder GOLDFOX">
+                    <img src="./img/FP009_BLACKFOX.png" alt="powder BLACKFOX">
+                </div>
+                <p>FC ZEROFOX / FC GOLDFOX / FC BLACKFOX</p>
+                
             </div>
             <div class="conten__checkdiv">
-                <div id="check_code">
+                
+                <div class="content__checkdiv-img">
+                    <img src="./img/code_sample.jpg" alt="пример наклейки">
+                </div>
+                
+                <div class="content__checkdiv-input">
+                    <div id="check_code">
 
-                    *Код:
-                    <input type="text" id="chcd_code">
-            
-                    <div id="chcd_captcha_img"></div>
-                    <div id="chcd_captcha_input"></div>
-            
-                    <input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
-            
-                    <div id="chcd_answer"></div>
+                        <p>Код с найклейки</p>
+                        <input type="text" placeholder="548545255325" id="chcd_code">
+                
+                        <div id="chcd_captcha_img"></div>
+                        <div id="chcd_captcha_input"></div>
+                
+                        <input id="chcd_button" type="button" value="Проверить" onclick="return chcd_fsubmit();">
+                
+                        <div id="chcd_answer"></div>
+                    </div>
                 </div>
             </div>
             <div class="conten__footer">

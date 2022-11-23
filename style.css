@@ -54,12 +54,52 @@ body {
     flex: 0 0 auto;
     margin-bottom: 2rem;
 }
+
+.powders_images {
+    display: flex;
+    justify-content: center;
+}
+
+.powders_images img {
+    width: 100px;
+    padding: 8px;
+}
 .conten__checkdiv {
     flex: 1 0 auto;
     border: 1px solid white;
-    min-height: 400px;
+    /* min-height: 400px; */
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
 }
+
+.conten__checkdiv img {
+    margin-right: 24px;
+}
+
+#chcd_code {
+    height: 32px;
+    min-width: 200px;
+    margin: 8px;
+    padding: 0 8px;
+}
+
+#chcd_button {
+    height: 32px;
+    background-color: white;
+    padding: 0 16px;
+    font-family: inherit;
+    font-weight: 600;
+
+}
+
+#chcd_button:hover {
+    cursor: pointer;
+    transform: scale(1.05);  
+}
+
 .conten__footer {
     flex: 0 0 auto;
 }
