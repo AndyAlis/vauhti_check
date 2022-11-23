@@ -59,6 +59,7 @@ body {
 .powders_images {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .powders_images img {
