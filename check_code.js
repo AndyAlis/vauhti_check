@@ -41,7 +41,7 @@ function chcd_focus()
 					chcd_answer[tokens[token].split('=')[0]] = tokens[token].split('=')[1];
 				}
 				
-				$("#chcd_answer").html('Заполните форму');
+				// $("#chcd_answer").html('Заполните форму'); я отключил
 				chcd_finit();
 			}
 		);

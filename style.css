@@ -71,6 +71,10 @@ body {
     border: 1px solid white;
     /* min-height: 400px; */
     margin-bottom: 2rem;
+    
+}
+
+.wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -80,25 +84,38 @@ body {
 
 
 
-#chcd_code {
+#chcd_code,
+#chcd_keystring {
     height: 32px;
     /* min-width: 200px; */
     margin: 8px;
     padding: 0 8px;
 }
 
+#chcd_keystring {
+    min-width: 120px;
+}
+
 #chcd_button {
     height: 32px;
     background-color: white;
+    color: #080808;
     padding: 0 16px;
     font-family: inherit;
     font-weight: 600;
+    min-width: 120px;
 
 }
 
 #chcd_button:hover {
     cursor: pointer;
     transform: scale(1.05);  
+}
+
+#chcd_answer {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+    background-color: gold;
 }
 
 .conten__footer {

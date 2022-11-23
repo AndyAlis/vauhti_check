@@ -7,7 +7,7 @@
     <title>Проверка подлинности Vauhti</title>
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="./chkCode/check_code.js"></script>
+	<script type="text/javascript" src="./check_code.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
 
 </head>
@@ -39,25 +39,30 @@
                 
             </div>
             <div class="conten__checkdiv">
+                <div class="wrapper">
+                    <div class="content__checkdiv-img">
+                        <img src="./img/code_sample.jpg" alt="пример наклейки">
+                    </div>
                 
-                <div class="content__checkdiv-img">
-                    <img src="./img/code_sample.jpg" alt="пример наклейки">
-                </div>
-                
-                <div class="content__checkdiv-input">
-                    <div id="check_code">
+                    <div class="content__checkdiv-input">
+                        <div id="check_code">
 
-                        <p>Код с найклейки</p>
-                        <input type="text" placeholder="548545255325" id="chcd_code">
+                            <p>Код с найклейки</p>
+                            <input type="text" placeholder="548545255325" id="chcd_code">
+                    
+                            <div id="chcd_captcha_img"></div>
+                            
+                            <div id="chcd_captcha_input">
+                                
+                            </div>
+                    
+                            <input id="chcd_button" type="button" value="Проверить" onclick="return chcd_fsubmit();">
                 
-                        <div id="chcd_captcha_img"></div>
-                        <div id="chcd_captcha_input"></div>
-                
-                        <input id="chcd_button" type="button" value="Проверить" onclick="return chcd_fsubmit();">
-                
-                        <div id="chcd_answer"></div>
+                        
+                        </div>
                     </div>
                 </div>
+                <div id="chcd_answer"></div>
             </div>
             <div class="conten__footer">
                 <p>Если серийный номер не найден в базе данных, Вы можете обратиться по телефону:</p>
