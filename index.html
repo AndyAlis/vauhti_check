@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Проверка подлинности Vauhti</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./chkCode/check_code.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
 </head>
 <body>
     <div class="body_container">
@@ -21,7 +24,18 @@
                 <p>Вы можете проверить подлинность товара введя код с защитной наклейки ниже. Проверка подлинности доступна для порошков Vauhti: ... </p>
             </div>
             <div class="conten__checkdiv">
-                
+                <div id="check_code">
+
+                    *Код:
+                    <input type="text" id="chcd_code">
+            
+                    <div id="chcd_captcha_img"></div>
+                    <div id="chcd_captcha_input"></div>
+            
+                    <input id="chcd_button" type="button" value="Отправить" onclick="return chcd_fsubmit();">
+            
+                    <div id="chcd_answer"></div>
+                </div>
             </div>
             <div class="conten__footer">
                 <p>Если серийный номер не найден в базе данных, Вы можете обратиться по телефону:</p>
