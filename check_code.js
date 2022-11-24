@@ -28,7 +28,7 @@ function chcd_focus()
 	if (!chcd_sess_init)
 	{
 		chcd_sess_init = 1;
-		$("#chcd_answer").html('Инициализация...');
+		$("#chcd_message").html('Инициализация...');
 
 		$.get(
 			chcd_url,
@@ -41,7 +41,7 @@ function chcd_focus()
 					chcd_answer[tokens[token].split('=')[0]] = tokens[token].split('=')[1];
 				}
 				
-				// $("#chcd_answer").html('Заполните форму'); я отключил
+				$("#chcd_message").html('Заполните форму');
 				chcd_finit();
 			}
 		);
