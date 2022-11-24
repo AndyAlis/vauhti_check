@@ -63,7 +63,8 @@ function chcd_finit()
 		$("#chcd_button").attr('disabled', false);	
 	}
 	else 
-		$("#check_code").html("Проверка кода в данный момент невозможна! (" + chcd_answer['txt'] + ")");
+		$("#chcd_answer").html("Проверка кода в данный момент невозможна! (" + chcd_answer['txt'] + ")");
+		$("#check_code").html("");
 }
 
 function chcd_check_form() 

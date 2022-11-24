@@ -18,6 +18,12 @@ body {
     color: #FFF;
 }
 
+a {
+    color: white;
+    margin-top: 16px;
+    display: inline-block;
+}
+
 .body_container {
     display: flex;
     align-items: center;
@@ -119,7 +125,7 @@ body {
     margin: 16px;
     padding: 16px;
     color: #080808;
-    
+
 }
 
 .conten__footer {
