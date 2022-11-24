@@ -116,6 +116,10 @@ body {
     margin-bottom: 16px;
     font-size: 1.5rem;
     background-color: gold;
+    margin: 16px;
+    padding: 16px;
+    color: #080808;
+    
 }
 
 .conten__footer {
